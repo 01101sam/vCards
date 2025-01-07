@@ -1,0 +1,152 @@
+# 如果想为此模版做出贡献，请先参考以下官方文档 (如需更新链接，请直接替换原短链接，在提交 PR 时请Ping @01101sam)
+# https://link.0s.hk/gh-docs-9eb797
+name: 🪪 vCard 新增请求
+description: 请求收录新的 vCard
+title: '[vCard 新增请求]: '
+labels: [ "vcard", "enhancement", "Pending" ]
+
+body:
+  # User's README and agreement
+  - type: markdown
+    attributes:
+      value: |
+        ## 感谢您愿意为项目做出贡献！
+        ## 以下是一些注意事项，可以让添加 vCard 更加顺利
+        
+        ### ❗ | 确定没有相同的 vCard 已被提出. 如有, 请到该 ISSUE 下方留言需要更新的内容.
+        ### ❗ | 确定这是新的 vCard. 如果是已有 vCard 的更新请求，请使用 [vCard 更新请求]()
+        ### ✍️ | 请准确填写所有信息
+        ---
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 请确保您已阅读以上注意事项，并勾选下方的确认框。
+      options:
+        - label: "我已经仔细阅读上述注意事项，并确认我已经准备好了所有必要的信息。"
+          required: true
+        - label: "我已经在 [Issue Tracker](https://github.com/metowolf/vCards/issues) 中找过我准备新增的 vCard，没有找到相同的 ISSUE。"
+          required: true
+#        - label: "我已经在 [黄页列表](https://github.com/metowolf/vCards/issues) 中找过我准备新增的 vCard，没有找到相同的 vCard。"
+#          required: true
+        - label: 我已知晓并同意，此处仅用于新增 vCard。若这个 Issue 是关于其他问题，则我的 Issue 可能会被无条件自动关闭或/并锁定。
+          required: true
+
+  # User's data
+  - type: markdown
+    attributes:
+      value: |
+        ## 联系人信息
+        请填写您想要新增的 vCard 信息
+
+  - type: dropdown
+    id: vcard-group
+    attributes:
+      label: 联系人分类
+      options:
+        - 互联网
+        - 出行购票
+        - 外卖订餐
+        - 应用软件
+        - 影音娱乐
+        - 快递物流
+        - 房产中介
+        - 政府机构
+        - 本地生活
+        - 汽车行业
+        - 电商购物
+        - 租车代驾
+        - 证券保险
+        - 通讯服务
+        - 金融银行
+        - 其它
+        - 新增分类（请在下方说明）
+    validations:
+      required: true
+
+  - type: input
+    id: vcard-group-new
+    attributes:
+      label: 新增分类
+      description: 如果您选择了「新增分类」，请在此处填写您的分类名称
+      placeholder: 请输入新增分类名称
+
+  - type: textarea
+    id: vcard-thumbnail
+    attributes:
+      label: 缩略图 (可选)
+      description: 您可以填写图片链接或直接上传到这里
+
+  - type: input
+    id: vcard-name
+    attributes:
+      label: 显示名称
+      description: 请填写联系人的显示名称
+      placeholder: 如 "中国移动", "麦当劳"
+    validations:
+      required: true
+
+  - type: input
+    id: vcard-name-en
+    attributes:
+      label: 显示名称 (英文)
+      description: 请填写联系人的显示名称
+      placeholder: 如 "China Mobile", "McDonald's China"
+
+  - type: input
+    id: vcard-org
+    attributes:
+      label: 组织名称
+      description: 请填写联系人所在的组织名称
+      placeholder: 组织名称, 公司名称等
+    validations:
+      required: true
+
+  - type: textarea
+    id: vcard-tel
+    attributes:
+      label: 电话号码
+      value: "- "
+      placeholder: |
+        单个电话号码:
+        - 11198765432
+
+        单个电话号码 (分行填写):
+        - 11198765432
+        - 11198765433
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: vcard-website
+    attributes:
+      label: 官方网站 (可选)
+      description: 请填写联系人的官方网址 (不用填写 http/https)
+      placeholder: |
+        单个网址:
+        - example.com
+        
+        单个网址 (分行填写):
+        - example.com
+        - example.org
+      render: markdown
+
+  - type: textarea
+    id: vcard-email
+    attributes:
+      label: 电子邮箱 (可选)
+      placeholder: |
+        单个邮箱:
+        - me@example.com
+        
+        单个邮箱 (分行填写):
+        - me@example.com
+        - alex@example.com
+      render: markdown
+
+  - type: textarea
+    id: vcard-note
+    attributes:
+      label: 备注 (可选)
+      description: 联系人的备注信息
+      render: markdown

@@ -1,13 +1,67 @@
-vCards CN
-=====
+<div align="center">
 
-导入常用联系人头像，优化 iOS 来电、信息界面体验。
+# vCards CN
 
-![Screenshot](https://user-images.githubusercontent.com/2666735/59692672-0b6bdf00-9218-11e9-881e-5856e263f3aa.png)
+_✨ 导入常用联系人头像，优化 iOS 来电、信息界面体验。 ✨_
+
+</div>
+
+<div align="center">
+  <a href="https://github.com/metowolf/vCards/releases">
+    <img src="https://img.shields.io/github/v/release/metowolf/vCards?color=blueviolet&include_prereleases" alt="release">
+  </a>
+
+  <a href="https://github.com/metowolf/vCards/actions">
+    <img src="https://github.com/metowolf/vCards/workflows/Release/badge.svg" alt="action">
+  </a>
+
+   <br>
+
+   <a href="https://github.com/metowolf/vCards/pulse">
+    <img src="https://img.shields.io/github/commit-activity/m/metowolf/vCards" alt="commit activity">
+   </a>
+
+   <a href="https://github.com/metowolf/vCards/commits/master">
+    <img src="https://img.shields.io/github/last-commit/metowolf/vCards" alt="last commit">
+   </a>
+</div>
+
+<div align="center">
+  <a href="https://github.com/metowolf/vCards/releases">下载</a>
+  ·
+  <a href="https://github.com/metowolf/vCards/issues/208">自建</a>
+  ·
+  <a href="#参与维护">参与贡献</a>
+</div>
+
+<br>
+
+<div align="center">
+<table>
+  <tr>
+    <th>🪪 vCard</th>
+    <th>💻 CardDAV</th>
+  </tr>
+  <tr>
+    <th>
+<a href="https://github.com/metowolf/vCards/issues/new?template=01-new-vcard.yaml">新增请求</a>
+  ·
+  <a href="https://github.com/metowolf/vCards/issues/new?template=02-update-vcard.yaml">更新请求</a>
+    </th>
+    <th>
+<a href="https://github.com/metowolf/vCards/issues/new?template=03-bug-report.yaml">回报错误</a>
+  ·
+  <a href="https://github.com/metowolf/vCards/issues/new?template=04-suggest-feature.yaml">提出改进</a>
+    </th>
+  </tr>
+</table>
+</div>
+
+![Preview Image](https://user-images.githubusercontent.com/2666735/59692672-0b6bdf00-9218-11e9-881e-5856e263f3aa.png)
 
 ## 使用指南
 
-### 订阅：CardDAV 服务/ 或参考[教程自建](https://github.com/metowolf/vCards/issues/208)
+### 订阅：CardDAV 服务 / 或参考教程[自建](https://github.com/metowolf/vCards/issues/208)
 采用订阅方式导入，优势是会自动更新，也更方便区分和管理个人通讯录和黄页，不会混合两种列表。
 
  - 服务器：`vcards.metowolf.com`
@@ -20,24 +74,19 @@ vCards CN
 
 ### 下载导入
 
-1. 到 https://github.com/metowolf/vCards/releases 下载最新的打包文件 `archive.zip`；
-2. 解压后，根据不同平台的指南导入 `vcf` 文件至 iCloud 中，推荐单独创建「黄页」分组方便管理和隐藏。
+1. 到 [releases](https://github.com/metowolf/vCards/releases) 下载最新的打包文件 `archive.zip`；
+2. 解压后，根据不同平台的指南导入 `vcf` 文件至 iCloud 中 \
+  ，推荐单独创建「黄页」分组方便管理和隐藏。
 
 #### macOS
  - [在 Mac 上的“通讯录”中创建联系人群组](https://support.apple.com/zh-cn/guide/contacts/adrb3280fe91/12.0/mac/10.14)
  - [在 Mac 上的“通讯录”中导入来自其他应用的联系人](https://support.apple.com/zh-cn/guide/contacts/adrbk1457/mac)
 
-#### iOS/web
+#### iOS / Web
  - [在 iCloud 通讯录中创建群组](https://support.apple.com/kb/PH2667?locale=zh_CN)
  - [将联系人导入 iCloud 通讯录](https://support.apple.com/kb/ph3605?locale=zh_CN)
 
 ----
-
-## 请求收录
-
- 1. 打开 https://github.com/metowolf/vCards/issues/new/choose 页面，选择「vCard 新增请求」
- 2. 完整填写相关信息
- 3. 提交 `issue`，等待处理
 
 ## 参与维护
 
