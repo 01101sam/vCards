@@ -104,7 +104,7 @@ body:
 
   - type: markdown
     attributes:
-      placeholder: |
+      value: |
         ## 联系人信息
         此处采用 diff 格式，格式如下:
         
