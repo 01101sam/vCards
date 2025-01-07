@@ -102,7 +102,7 @@ body:
       description: 请填写联系人所在的组织名称, 如不为空将会覆盖原有信息
       placeholder: 组织名称, 公司名称等
 
-  - type: textarea
+  - type: markdown
     attributes:
       placeholder: |
         ## 联系人信息
