@@ -99,21 +99,21 @@ body:
   - type: dropdown
     id: env-js-runtime
     attributes:
-    label: JavaScript 运行环境
-    description: 选择运行 JavaScript 的环境
-    options:
-        - Node.js
-        - Deno
-        - Bun
-        - Fastly Compute
-        - Vercel
-        - Netlify
-        - AWS Lambda
-        - Lambda@Edge
-        - Azure Functions
-        - 阿里云函数计算
-        - 腾讯云云函数SCF
-        - 其它（请在下方说明）
+      label: JavaScript 运行环境
+      description: 选择运行 JavaScript 的环境
+      options:
+          - Node.js
+          - Deno
+          - Bun
+          - Fastly Compute
+          - Vercel
+          - Netlify
+          - AWS Lambda
+          - Lambda@Edge
+          - Azure Functions
+          - 阿里云函数计算
+          - 腾讯云云函数SCF
+          - 其它（请在下方说明）
 
   - type: input
     id: env-js-runtime-other
@@ -126,9 +126,9 @@ body:
   - type: input
     id: env-runtime-ver
     attributes:
-    label: 运行环境版本
-    description: 请填写您的运行环境版本
-    placeholder: "v22.12.0"
+      label: 运行环境版本
+      description: 请填写您的运行环境版本
+      placeholder: "v22.12.0"
 
   - type: markdown
     attributes:

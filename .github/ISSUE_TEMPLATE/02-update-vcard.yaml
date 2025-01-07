@@ -14,7 +14,7 @@ body:
         ## 以下是一些注意事项，可以让更新 vCard 更加顺利
         
         ### ❗ | 确定没有相同的 vCard 已被提出. 如有, 请到该 ISSUE 下方留言需要更新的内容.
-        ### ❗ | 确定这是已有 vCard 的更新请求. 如果是新的 vCard，请使用 [vCard 新增请求]()
+        ### ❗ | 确定这是已有 vCard 的更新请求. 如果是新的 vCard，请使用 [vCard 新增请求](https://github.com/metowolf/vCards/issues/new?template=01-new-vcard.yaml)
         ### ✍️ | 请准确填写所有信息
         ---
   - type: checkboxes
@@ -102,9 +102,9 @@ body:
       description: 请填写联系人所在的组织名称, 如不为空将会覆盖原有信息
       placeholder: 组织名称, 公司名称等
 
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
+      placeholder: |
         ## 联系人信息
         此处采用 diff 格式，格式如下:
         

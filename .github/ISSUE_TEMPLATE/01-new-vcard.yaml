@@ -14,7 +14,7 @@ body:
         ## 以下是一些注意事项，可以让添加 vCard 更加顺利
         
         ### ❗ | 确定没有相同的 vCard 已被提出. 如有, 请到该 ISSUE 下方留言需要更新的内容.
-        ### ❗ | 确定这是新的 vCard. 如果是已有 vCard 的更新请求，请使用 [vCard 更新请求]()
+        ### ❗ | 确定这是新的 vCard. 如果是已有 vCard 的更新请求，请使用 [vCard 更新请求](https://github.com/metowolf/vCards/issues/new?template=02-update-vcard.yaml)
         ### ✍️ | 请准确填写所有信息
         ---
   - type: checkboxes
@@ -105,7 +105,6 @@ body:
     id: vcard-tel
     attributes:
       label: 电话号码
-      value: "- "
       placeholder: |
         单个电话号码:
         - 11198765432
